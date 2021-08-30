@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "tsc greeter.ts"
+  },
   "devDependencies": {
     "typescript": "^4.4.2"
   }
