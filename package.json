@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "build": "tsc greeter.ts"
+    "build": "npx tsc src/greeter.ts --outfile public/greeter.js"
   },
   "devDependencies": {
     "typescript": "^4.4.2"
   }
 }
+
