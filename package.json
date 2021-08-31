@@ -1,9 +1,11 @@
 {
   "scripts": {
-    "build": "npx tsc src/greeter.ts --outfile public/greeter.js"
+    "tsc": "npx tsc src/greeter.ts --outfile public/greeter.js",
+    "build": "browserify -p [ tsify --noImplicitAny ] src/greeter.ts > public/greeter.js"
   },
   "devDependencies": {
+    "browserify": "^17.0.0",
+    "tsify": "^5.0.4",
     "typescript": "^4.4.2"
   }
 }
-
