@@ -1,3 +1,8 @@
+var fs = require('fs')
+
+var foo = fs.readFileSync(__dirname + '/foo', 'utf8')
+console.log('foo,', foo)
+
 class Student {
     fullName: string;
 
